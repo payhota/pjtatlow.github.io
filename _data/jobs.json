@@ -1,0 +1,43 @@
+[
+  {
+    org: "Simmons Center for Cancer Research",
+    start: "April 2016",
+    end: "Current",
+    title: "Research Fellow",
+    description: "Led an independant research project focused on applying machine learning to the field of Pharmacogenomics.",
+    image: "/img/scrr-logo.jpg"
+  },
+  {
+    org: "Piccolo Lab",
+    start: "December 2015",
+    end: "Current",
+    title: "Research Assistant",
+    description: "Led an independant research project focused on applying machine learning to the field of Pharmacogenomics.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/BYU_Medallion_Logo.svg/2000px-BYU_Medallion_Logo.svg.png"
+  },
+  {
+    org: "Grose Lab",
+    start: "August 2015",
+    end: "Current",
+    title: "Research Assistant & Software Developer",
+    description: "Led an independant research project focused on applying machine learning to the field of Pharmacogenomics.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/BYU_Medallion_Logo.svg/2000px-BYU_Medallion_Logo.svg.png"
+  },
+  {
+    org: "Center for Teaching and Learning",
+    start: "April 2015",
+    end: "Current",
+    title: "Computer Support Repr",
+    description: "Led an independant research project focused on applying machine learning to the field of Pharmacogenomics.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/BYU_Medallion_Logo.svg/2000px-BYU_Medallion_Logo.svg.png"
+  },
+  {
+    org: "Geek Squad",
+    start: "August 2014",
+    end: "April 2015",
+    title: "Advanced Repair Agent",
+    description: "Led the precinct in repairing and maintaining computers to the client's needs and expectations.",
+    image: "https://pbs.twimg.com/profile_images/719527843076509696/5zr6aC4U.jpg"
+  },
+
+]

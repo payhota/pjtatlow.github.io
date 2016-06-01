@@ -2,23 +2,129 @@
 layout: default
 title: pjtatlow | home
 ---
+<div class="main-heading">
+  <div class="container">
+      <div class="col-md-4 col-lg-4">
+<!--        <img src="/img/pjtatlow.jpg" class="img-circle img-responsive center-block" height="240" width="240">-->
+      </div>
+      <div>
+        <div class="text-center">
+          <h4 style="font-size:28px;">My name is</h4>
+          <h1 class="name-big">PJ Tatlow</h1>
+          <h4>Lets Talk About <span class="typed"></span></h4>
+        </div>
 
-<div class="home">
+      </div>
+  </div>
+</div>  
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="container">
+  
+  <div class="col-md-12 col-lg-12" id="experience">
+    <div class="page-header">
+      <h2>Experience</h2>
+    </div>
+      {% for job in site.data.jobs %}
+        <div class="experience-item">
+          <div class="col-md-4 col-lg-4">
+            <img class="experience-image" src="{{ job.image }}" height="180" width="180">
+          </div>
+          <div class="experience-text card col-md-8 col-lg-8">
+            <h3>{{ job.org }}</h3>
+            <h4>{{ job.title }}</h4>
+            <h5>{{ job.start }} - {{ job.end }}</h5>
+            <p class="experience-description">{{ job.description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+  </div>
+  
+  <div class="col-md-12 col-lg-12" id="projects">
+    <div class="page-header">
+      <h2>Projects</h2>
+    </div>
+      {% for job in site.data.jobs %}
+        <div class="experience-item">
+          <div class="col-md-4 col-lg-4">
+            <img class="experience-image" src="{{ job.image }}" height="180" width="180">
+          </div>
+          <div class="experience-text card col-md-8 col-lg-8">
+            <h3>{{ job.org }}</h3>
+            <h4>{{ job.title }}</h4>
+            <h5>{{ job.start }} - {{ job.end }}</h5>
+            <p class="experience-description">{{ job.description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+  </div>
+  
+  <div class="col-md-12 col-lg-12" id="about">
+    <div class="page-header">
+      <h2>About PJ</h2>
+    </div>
+      {% for job in site.data.jobs %}
+        <div class="experience-item">
+          <div class="col-md-4 col-lg-4">
+            <img class="experience-image" src="{{ job.image }}" height="180" width="180">
+          </div>
+          <div class="experience-text card col-md-8 col-lg-8">
+            <h3>{{ job.org }}</h3>
+            <h4>{{ job.title }}</h4>
+            <h5>{{ job.start }} - {{ job.end }}</h5>
+            <p class="experience-description">{{ job.description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+  </div>
+  
+  <div class="col-md-12 col-lg-12" id="contact">
+    <div class="page-header">
+      <h2>Contact</h2>
+    </div>
+      {% for job in site.data.jobs %}
+        <div class="experience-item">
+          <div class="col-md-4 col-lg-4">
+            <img class="experience-image" src="{{ job.image }}" height="180" width="180">
+          </div>
+          <div class="experience-text card col-md-8 col-lg-8">
+            <h3>{{ job.org }}</h3>
+            <h4>{{ job.title }}</h4>
+            <h5>{{ job.start }} - {{ job.end }}</h5>
+            <p class="experience-description">{{ job.description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+  </div>
+  
 </div>
+
+        <div class="col-md-8 col-lg-8">
+          <ul class="interests">
+            <li>- at Brigham Young University</li>
+            <li>- studying Bioinformatics</li>
+            <li>- interested in genomics, machine learning, and web development</li>
+            <li>- willing to help! Reach out if you think I can!</li>
+          </ul>
+        </div>
+
+<script>
+
+$(function(){
+  $(".typed").typed({
+    strings: ["Science", "Gadgets", "Coding Tips", "Machine Learning", "Android", "Bioinformatics", "Life Hacks", 
+              "Gaming", "Artificial Intelligence", "iOS", "Custom PCs"],
+    typeSpeed: 30,
+    showCursor: true,
+    loop: true,
+    backDelay: 1000,
+    backSpeed: 30
+  });
+  
+  $(".arctic_scroll").arctic_scroll({
+      speed: 1000
+  });  
+  
+  $('body').scrollspy({ target: '#main_nav', offset: 50 })
+  
+});
+</script>

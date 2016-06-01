@@ -12,7 +12,7 @@
   position: relative;
   min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: $navbar-margin-bottom;
-  border: 1px solid transparent;
+  border: 0px solid transparent;
 
   // Prevent floats from breaking the navbar
   @include clearfix;
@@ -192,7 +192,7 @@
 
 .navbar-toggle {
   position: relative;
-  float: right;
+  float: left;
   margin-right: $navbar-padding-horizontal;
   padding: 9px 10px;
   @include navbar-vertical-align(34px);
