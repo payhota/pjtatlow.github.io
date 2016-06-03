@@ -45,14 +45,17 @@ $(document).ready(function() {
         sidebar.toggleClass('open');
         if ((sidebar.hasClass('sidebar-fixed-left') || sidebar.hasClass('sidebar-fixed-right')) && sidebar.hasClass('open')) {
             overlay.addClass('active');
+          $('body').addClass('noscroll')
         } else {
             overlay.removeClass('active');
+            $('body').removeClass('noscroll')          
         }
     });
 
     overlay.on('click', function() {
         $(this).removeClass('active');
         $('#sidebar').removeClass('open');
+        $('body').removeClass('noscroll')
     });
     $('.sidenav-link').on('click', function() {
       $('.sidebar-toggle').click()

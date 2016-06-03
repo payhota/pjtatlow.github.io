@@ -54,6 +54,16 @@ body {
     padding-left: 8px !important;
     padding-right: 8px !important;
   }
+  bottom: 0px;
+}
+.sidenav-notes {
+  background-color: $brand-primary;
+  a {
+    color: #eee !important;
+  }
+  bottom: 0px;
+  position: absolute !important;
+  width: 240px;
 }
 
 
@@ -68,7 +78,9 @@ body {
   margin-top: 35px;
 }  
   
-
+.noscroll {
+  overflow: hidden;
+}
 
 // Small grid
 //
@@ -79,7 +91,11 @@ body {
 
 }
 
-
+@media (min-width: $grid-float-breakpoint) {
+  .hide-on-md {
+    display: none;
+  }
+}
 // Medium grid
 //
 // Columns, offsets, pushes, and pulls for the desktop device range.
@@ -95,9 +111,7 @@ body {
     position: absolute;
     margin-top: 0;
   }
-  .hide-on-md {
-    display: none;
-  }
+
 }
 
 
@@ -108,3 +122,4 @@ body {
 @media (min-width: $screen-lg-min) {
 
 }
+

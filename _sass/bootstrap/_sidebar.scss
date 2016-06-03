@@ -198,6 +198,7 @@
 .sidebar .sidebar-nav {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 .sidebar .sidebar-nav li {
   position: relative;
@@ -497,6 +498,7 @@
 }
 #sidebar {
   background-color: #FFFFFF;
+  overflow-y: hidden;
 }
 .sidebar-overlay {
   visibility: hidden;
