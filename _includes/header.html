@@ -2,11 +2,8 @@
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+      <button type="button" class="sidebar-toggle hide-on-md"  aria-expanded="false">
+        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
       </button>
       <a class="navbar-brand arctic_scroll" href="#" data-position="0">PJ Tatlow</a>
     </div>
@@ -25,3 +22,20 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+
+<!-- Overlay for fixed sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<nav id="sidebar" class="sidebar sidebar-fixed-left" role="navigation">
+
+    <!-- Sidebar navigation -->
+    <ul class="nav sidebar-nav">
+      <li><a class="arctic_scroll sidenav-link" data-offset="-50" href="#experience">Experience</a></li>
+      <li><a class="arctic_scroll sidenav-link" data-offset="-50" href="#projects">Projects</a></li>
+      <li><a class="arctic_scroll sidenav-link" data-offset="-50" href="#about">About</a></li>
+      <li><a class="arctic_scroll sidenav-link" data-offset="-50" href="#contact">Contact</a></li>
+  </ul>
+</nav>
+

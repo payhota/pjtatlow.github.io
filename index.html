@@ -1,37 +1,29 @@
 ---
 layout: default
-title: pjtatlow | home
+title: PJ Tatlow
 ---
 <div class="main-heading">
-  <div class="container">
-      <div class="col-md-4 col-lg-4">
-<!--        <img src="/img/pjtatlow.jpg" class="img-circle img-responsive center-block" height="240" width="240">-->
-      </div>
-      <div>
         <div class="text-center">
           <h4 style="font-size:28px;">My name is</h4>
           <h1 class="name-big">PJ Tatlow</h1>
           <h4>Lets Talk About <span class="typed"></span></h4>
         </div>
-
-      </div>
-  </div>
 </div>  
 
 <div class="container">
   
-  <div class="col-md-12 col-lg-12" id="experience">
+  <div class="col-md-12 col-lg-12 clearfix" id="experience">
     <div class="page-header">
       <h2>Experience</h2>
     </div>
       {% for job in site.data.jobs %}
-        <div class="experience-item">
-          <div class="col-md-4 col-lg-4">
+        <div class="experience-item row">
+          <div class="col-md-3 col-lg-3">
             <img class="experience-image" src="{{ job.image }}" height="180" width="180">
           </div>
-          <div class="experience-text card col-md-8 col-lg-8">
-            <h3>{{ job.org }}</h3>
-            <h4>{{ job.title }}</h4>
+          <div class="experience-text card col-md-9 col-lg-9">
+            <h3>{{ job.title }}</h3>
+            <h4>{{ job.org }}</h4>
             <h5>{{ job.start }} - {{ job.end }}</h5>
             <p class="experience-description">{{ job.description }}</p>
           </div>
@@ -39,45 +31,35 @@ title: pjtatlow | home
       {% endfor %}
   </div>
   
-  <div class="col-md-12 col-lg-12" id="projects">
+  <div class="col-md-12 col-lg-12 clearfix" id="projects">
     <div class="page-header">
       <h2>Projects</h2>
     </div>
-      {% for job in site.data.jobs %}
+      {% for project in site.data.projects %}
         <div class="experience-item">
-          <div class="col-md-4 col-lg-4">
-            <img class="experience-image" src="{{ job.image }}" height="180" width="180">
+          <div class="col-md-3 col-lg-3">
+            <img class="experience-image" src="{{ project.image }}" height="180" width="180">
           </div>
-          <div class="experience-text card col-md-8 col-lg-8">
-            <h3>{{ job.org }}</h3>
-            <h4>{{ job.title }}</h4>
-            <h5>{{ job.start }} - {{ job.end }}</h5>
-            <p class="experience-description">{{ job.description }}</p>
+          <div class="experience-text card col-md-9 col-lg-9">
+            <h3>{{ project.title }}</h3>
+            <h4>{{ project.catchphrase }}</h4>
+            <p class="experience-description">{{ project.description }}</p>
           </div>
         </div>
       {% endfor %}
   </div>
   
-  <div class="col-md-12 col-lg-12" id="about">
+  <div class="col-md-12 col-lg-12 clearfix" id="about">
     <div class="page-header">
-      <h2>About PJ</h2>
+      <h2>About</h2>
     </div>
-      {% for job in site.data.jobs %}
-        <div class="experience-item">
-          <div class="col-md-4 col-lg-4">
-            <img class="experience-image" src="{{ job.image }}" height="180" width="180">
-          </div>
-          <div class="experience-text card col-md-8 col-lg-8">
-            <h3>{{ job.org }}</h3>
-            <h4>{{ job.title }}</h4>
-            <h5>{{ job.start }} - {{ job.end }}</h5>
-            <p class="experience-description">{{ job.description }}</p>
-          </div>
-        </div>
-      {% endfor %}
+      <img src="/img/pjtatlow.jpg" class="img-circle img-responsive center-block" height="240" width="240">
+      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+        <h3>Hi! Thanks for checking out my page.</h3>
+      </div>  
   </div>
   
-  <div class="col-md-12 col-lg-12" id="contact">
+  <div class="col-md-12 col-lg-12 clearfix" id="contact">
     <div class="page-header">
       <h2>Contact</h2>
     </div>
@@ -97,15 +79,6 @@ title: pjtatlow | home
   </div>
   
 </div>
-
-        <div class="col-md-8 col-lg-8">
-          <ul class="interests">
-            <li>- at Brigham Young University</li>
-            <li>- studying Bioinformatics</li>
-            <li>- interested in genomics, machine learning, and web development</li>
-            <li>- willing to help! Reach out if you think I can!</li>
-          </ul>
-        </div>
 
 <script>
 
@@ -127,4 +100,5 @@ $(function(){
   $('body').scrollspy({ target: '#main_nav', offset: 50 })
   
 });
+  
 </script>

@@ -1,0 +1,27 @@
+[
+  {
+    title: "Geneysis",
+    catchphrase: "A Novel Tool for Aligning Baceriophage Gene Starts",
+    description: "After spending several dozen hours manually annotating phage genomes, I realized at least part of the process could be done programatically, and Geneysis was born. \
+                  Based around the idea that phages have very close relatives, Geneysis attempts to cluster a group of phages proteins into 'phams', and makes sure each gene in the \
+                  pham starts at roughly the same place. Still in development, and available soon on Github.",
+    image: "/img/geneysis.jpg"
+  },
+  {
+    title: "Brio Portal",
+    catchphrase: "Internal Proposal Generation and Management",
+    description: "Created a web app for a local solar energy company to create customized proposals for their potential clients, helping to close sales. Brio Portal takes each client's \
+                  energy usage, along with an address and the arrangement of the panels, and calculates that person's individualized savings after switching to solar. It displays all relevent \
+                  information in a self designed PDF which contains the important charts and figures the client needs to make an informed decision about solar energy. This is used daily by \
+                  the staff at Brio Energy, and has generated almost 10,000 proposals to date.",
+    image: "/img/brio.png"
+  },
+  {
+    title: "CTL Asset Tracking",
+    catchphrase: "Throw Out The Spreadsheets",
+    description: "Originally helped move our department away from tracking hardware and software purchases via spreadsheets, and into a web app. Later independantly rewrote the app to handle \
+                  a wider variety of situations, including allowing all employees to track the hardware they use.",
+    image: "https://pbs.twimg.com/profile_images/719527843076509696/5zr6aC4U.jpg"
+  },
+
+]
