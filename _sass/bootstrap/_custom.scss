@@ -95,12 +95,6 @@ body {
   .hide-on-md {
     display: none;
   }
-}
-// Medium grid
-//
-// Columns, offsets, pushes, and pulls for the desktop device range.
-
-@media (min-width: $screen-md-min) {
   .experience-text {
     text-align: left;
     position: relative;
@@ -110,7 +104,14 @@ body {
   .experience-image {
     position: absolute;
     margin-top: 0;
-  }
+  }  
+}
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+
+@media (min-width: $screen-md-min) {
+
 
 }
 
