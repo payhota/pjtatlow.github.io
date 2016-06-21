@@ -1,0 +1,93 @@
+[
+  { 
+    name : "HTML",
+    style : "",
+    stars : 4.5,
+  },
+  { 
+    name : "Javascript",
+    style : "",
+    stars : 4,
+  },
+  { 
+    name : "CSS",
+    style : "",
+    stars : 4.5,
+  },
+  { 
+    name : "C++",
+    style : "",
+    stars : 3.5,
+  },
+  { 
+    name : "Python",
+    style : "",
+    stars : 4,
+  },
+  { 
+    name : "Minecraft",
+    style : "text-decoration:line-through;",
+    stars: 5,
+  },
+  { 
+    name : "MySQL",
+    style : "",
+    stars : 4,
+  },
+  { 
+    name : "SQLite",
+    style : "",
+    stars : 3,
+  },
+  { 
+    name : "Electron",
+    style : "",
+    stars : 3,
+  },
+  { 
+    name : "PHP",
+    style : "",
+    stars : 3.5,
+  },
+  { 
+    name : "Bash",
+    style : "",
+    stars : 3,
+  },
+  { 
+    name : "Jquery",
+    style : "",
+    stars : 4,
+  },
+  { 
+    name : "AngularJS",
+    style : "",
+    stars : 3.5,
+  },
+  { 
+    name : "R",
+    style : "",
+    stars : 3,
+  },
+  { 
+    name : "Git",
+    style : "",
+    stars : 4,
+  },
+  { 
+    name : "SciPy",
+    style : "",
+    stars : 3,
+  },
+  { 
+    name : "Google Cloud",
+    style : "",
+    stars : 2.5,
+  },
+  { 
+    name : "Docker",
+    style : "",
+    stars : 2.5,
+  },  
+
+]

@@ -14,7 +14,7 @@ title: PJ Tatlow
   
   <div class="col-md-12 col-lg-12 clearfix" id="experience">
     <div class="page-header">
-      <h2>Experience</h2>
+      <h2>Some cool things I've done:</h2>
     </div>
       {% for job in site.data.jobs %}
         <div class="experience-item row">
@@ -33,7 +33,7 @@ title: PJ Tatlow
   
   <div class="col-md-12 col-lg-12 clearfix" id="projects">
     <div class="page-header">
-      <h2>Projects</h2>
+      <h2>Some cool things I've made:</h2>
     </div>
       {% for project in site.data.projects %}
         <div class="experience-item">
@@ -51,31 +51,64 @@ title: PJ Tatlow
   
   <div class="col-md-12 col-lg-12 clearfix" id="about">
     <div class="page-header">
-      <h2>About</h2>
+      <h2>About Me <small style="font-size:10px;">because you wanted to know more</small></h2>
     </div>
       <img src="/img/pjtatlow.jpg" class="img-circle img-responsive center-block" height="240" width="240">
-      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center">
+        <blockquote>
+          <p>If you can't make it good, at least make it look good.</p>
+          <footer>Bill Gates</footer>
+        </blockquote>        
         <h3>Hi! Thanks for checking out my page.</h3>
+        <h4>
+          
+          I am currently an undergraduate student studying <a href="bioinformatics.byu.edu">Bioinformatics</a> 
+          and <a href="cs.byu.edu">CS</a> at BYU. I've find myself being drawn towards the fields of machine 
+          learning and data science, and I'm excited to find out what kind of new things we'll be able to do.
+          
+        </h4>
+        <h4>Some tools I've used:</h4>
+        {% for skill in site.data.skills %}
+          <div class="skill" style="{{skill.style}}" data-toggle="tooltip" data-placement="top" title='<div class="stars">
+            {% if skill.stars == 5 %}
+              <i class="fa fa-star fa-fw" aria-hidden="true"></i><i class="fa fa-star fa-fw" aria-hidden="true"></i><i class="fa fa-star fa-fw" aria-hidden="true"></i><i class="fa fa-star fa-fw" aria-hidden="true"></i><i class="fa fa-star fa-fw" aria-hidden="true"></i>
+            {% elsif skill.stars >= 4 %}
+              <i class="fa fa-star fa-fw" aria-hidden="true"></i><i class="fa fa-star fa-fw" aria-hidden="true"></i><i class="fa fa-star fa-fw" aria-hidden="true"></i><i class="fa fa-star fa-fw" aria-hidden="true"></i>      
+              {% if skill.stars > 4 %}
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+              {% endif %}
+            {% elsif skill.stars >= 3 %}
+              <i class="fa fa-star fa-fw" aria-hidden="true"></i><i class="fa fa-star fa-fw" aria-hidden="true"></i><i class="fa fa-star fa-fw" aria-hidden="true"></i>     
+              {% if skill.stars > 3 %}
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+              {% endif %}
+            {% elsif skill.stars >= 2 %}
+              <i class="fa fa-star fa-fw" aria-hidden="true"></i><i class="fa fa-star fa-fw" aria-hidden="true"></i>   
+              {% if skill.stars > 2 %}
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+              {% endif %}
+            {% endif %}  
+        </div>'>{{ skill.name }}
+        </div>
+        {% endfor %}
+          <div class="skill" >& More</div>        
       </div>  
   </div>
   
-  <div class="col-md-12 col-lg-12 clearfix" id="contact">
+  <div class="col-md-12 col-lg-12 clearfix" id="contact" style="margin-bottom:65px;">
     <div class="page-header">
       <h2>Contact</h2>
     </div>
-      {% for job in site.data.jobs %}
-        <div class="experience-item">
-          <div class="col-md-4 col-lg-4">
-            <img class="experience-image" src="{{ job.image }}" height="180" width="180">
-          </div>
-          <div class="experience-text card col-md-8 col-lg-8">
-            <h3>{{ job.org }}</h3>
-            <h4>{{ job.title }}</h4>
-            <h5>{{ job.start }} - {{ job.end }}</h5>
-            <p class="experience-description">{{ job.description }}</p>
-          </div>
-        </div>
-      {% endfor %}
+    <h4 class="text-center col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1" >The best way to reach me is probably by email: pj(dot)tatlow<i class="fa fa-at" aria-hidden="true"></i>gmail(dot)com.<br>
+    But feel free to follow, fork, or reach out to me using any of the sites below!</h4>
+    
+    <div class="social-icons col-md-12 col-lg-12">
+      <a class="social-icon" target="_blank" href="https://github.com/pjtatlow"><i class="fa fa-github" aria-hidden="true"></i></a>            
+      <a class="social-icon" target="_blank" href="https://twitter.com/pjtatlow"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a class="social-icon" target="_blank" href="https://plus.google.com/u/0/+PJTatlow"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+      <a class="social-icon" target="_blank" href="https://www.facebook.com/pj.tatlow"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/pj-tatlow-7073b855"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    </div>
   </div>
   
 </div>
@@ -100,5 +133,17 @@ $(function(){
   $('body').scrollspy({ target: '#main_nav', offset: 50 })
   
 });
+  
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip({container: 'body', html: true});
+    $('#stars').each(function(number, element) {
+      console.log(element.attr('data-stars'))
+      console.log("test")
+    });
+    
+    
+    
+  });
+  
   
 </script>
