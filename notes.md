@@ -7,7 +7,7 @@ permalink: /notes/
 <div class="main-heading">
         <div class="text-center">
           <h1 class="name-big">Notes</h1>
-          <h4>Just some things I've picked up along the way.</h4>
+          <h4>Just some things I've picked up along the way.<br><small>Press Shift+Space to search</small></h4>
         </div>
 </div>  
 

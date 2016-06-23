@@ -16,7 +16,18 @@
 
     if (settings.floatingBtn) {
       $(settings.appendTo).append('<button class="search-button"><i class="glyphicon glyphicon-search"></i></button>')
+      $(".search-button").click(function() {
+        $(".search-background").fadeToggle(100, function() {
+        if ($(".search-background").css('display') !== "none") {
+          $(".search-input").focus();
+        }
+        else {
+          $(".search-input").blur();
+        }        
+      });
+    })
     }
+                                
     
     var selectPost = function(id) {
       $(".search-result").each(function() {
