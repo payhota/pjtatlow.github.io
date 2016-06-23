@@ -1,55 +1,10 @@
 <script src="{{ "/js/lunr.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/searchyMcSearchBox.js" | prepend: site.baseurl }}"></script>
 
-<div class="search-background">
-  
-  <div id="search-cover">
-    <div id="search-box">
-      <div class="col-md-12 col-lg 12 col-sm-12 col-xs-12 input-group">
-        <input type="text" id="search-input" class="form-control" placeholder="Search Notes" autocomplete="off">
-        <span id="search-addon" class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>        
-      </div>
-      <span id="search-input-cover"></span>
-      
-      <div id="results" class="col-md-12 col-lg 12 col-sm-12 col-xs-12">        
-        
-      </div>
-      
-    </div>
-  </div>
-  
-</div>
-
-
-<!--
-          <div class="search-result" tabindex="1">
-            <h5>Title - 04/10/16</h5>
-          </div>
--->
 
 <script>
 
-$(document).ready(function(){
-  
-  function initEmptyResults() {
-    $("#results").append('<div id="search-results" ><div><h5 class="results-title"><strong>Results:</strong></h5></div></div><div id="results-preview" class=""></div>')
-  }
-  
-  function selectPost(id) {
-    $(".search-result").each(function() {
-      $(this).removeClass("selected");
-      if ($(this).attr("data-search-id") == id) {
-        $(this).addClass("selected");
-      }
-    })    
-    
-    var post = posts[id];
-    
-    $("#results-preview").empty();
-    $("#results-preview").append('<div class="preview-container"><h5 class="text-center"><strong>Preview</strong></h5></div>');
-    $("#results-preview").append(post.html);
-    $("#results-preview").append('<h5 class="results-preview-meta">' + post.date.toLocaleDateString() + "</h5>");    
-  }
-  
+$(document).ready(function() {  
   var posts = {
     {% for post in site.posts %}
       "{{ post.url | slugify }}": {
@@ -63,7 +18,7 @@ $(document).ready(function(){
       {% unless forloop.last %},{% endunless %}
     {% endfor %}
   };
-                                   
+//                                   
   var idx = lunr(function () {
     this.field('id');
     this.field('title', { boost: 10 });
@@ -81,131 +36,13 @@ $(document).ready(function(){
       'content': posts[key].content
     });  
   }  
-  
-  
-  
-  $("#search-box").draggable({
-    containment: ".search-background",
-    handle: "#search-input-cover"
-  }); // make search-bar draggable
-  
-  $(document).keydown(function(e) {
-    if (e.which == 32) { // spacebar
-      if (e.shiftKey) {    
-        e.preventDefault();
-        $(".search-background").fadeToggle(100, function() {
-          if ($(".search-background").css('display') !== "none") {
-            $("#search-input").focus();
-          }
-          else {
-            $("#search-input").blur();
-          }
-        })
-      }
-    }
-    else if ($(".search-background").css('display') !== "none") {
-      if (e.which == 40 || (e.which == 9 && e.shiftKey === false)) { // down arrow
-        e.preventDefault();
-        var index = -1;
-        $(".search-result").each(function() {
-          if ($(this).hasClass("selected")) {
-            $(this).removeClass("selected");
-            index = $(this).attr("data-search-index");
-          }
-        })
-        index++;
-        selectPost($("[data-search-index="+ index + "]").attr("data-search-id"));
-
-      }
-      else if (e.which == 38 || (e.which == 9 && e.shiftKey === true)) { // up arrow
-        
-        e.preventDefault();
-        var index = -1;
-        var max = -1;
-        $(".search-result").each(function() {
-          if ($(this).attr("data-search-index") > max) {
-            max = $(this).attr("data-search-index");
-          }
-          if ($(this).hasClass("selected")) {
-            $(this).removeClass("selected");
-            index = $(this).attr("data-search-index");
-          }
-        })
-        if (index === -1) {
-          index = max;
-        }
-        else {
-          index--;
-        }
-        selectPost($("[data-search-index="+ index + "]").attr("data-search-id"));
-      }
-    }
-    
-  }); // watch for SHIFT + SPACE and arrow up and down
-
-  $(".search-background").on("click",function(e) {
-    if (e.target == $(this)[0]) {
-      $(this).fadeToggle(100, function() {
-        $("#search-input").blur();
-      });
-    }
-  }); // close when you click outside of 
-  
-  $("#search-input-cover").on("click",function(e) { 
-    $("#search-input").focus();
-  }); // focus on input box when you click anywhere on the search bar
-  
-  $("#search-input").on("input",function(e) {
-    $("#results").empty();
-    var results = idx.search($(this).val());
-    if (results.length > 0) {
-      initEmptyResults();
-      var i = 0;
-      for (var result of results) {
-        var post = posts[result.ref]
-        $("#search-results").append('<div class="search-result" data-search-index="'+ i +'" data-search-id="'+ result.ref +'"><h5>' + post.title + "</h5><a href='"+post.url+"'><i class='fa fa-arrow-circle-right'></i></a></div>")
-        if (i == 0) {
-          console.log(result.ref)
-          selectPost(result.ref);
-        }
-        i ++;
-      }
-    }
-  });
-  
-  $("#search-input").keydown(function(e) {
-    if (e.which == 40 || e.which == 38) {
-      e.preventDefault();
-    }
-  });
-  
-  
                                  
-  $(document).on('click',".search-result",function(e) {
-    var id = $(e.target).attr("data-search-id")
-    if (id === undefined) {
-      id = $(e.target).parent().attr("data-search-id")
-    }
-    selectPost(id);
-    
-//    $(".search-result").each(function() {
-//      $(this).removeClass("selected");
-//    })
-//    var post = posts[$(e.target).attr("data-search-id")];
-//    
-//    if (post == undefined) {
-//      post = posts[$(e.target).parent().attr("data-search-id")];
-//      $(e.target).parent().addClass("selected");
-//    }
-//    else {
-//      $(e.target).addClass("selected");
-//    }
-//    $("#results-preview").empty();
-//    $("#results-preview").append('<div class="preview-container"><h5 class="text-center"><strong>Preview</strong></h5></div>');
-//    $("#results-preview").append(post.html);
-//    $("#results-preview").append('<h5 class="results-preview-meta">' + post.date.toLocaleDateString() + "</h5>");
-  })
-  
-  
+  $(document).searchBox({
+    dates: true,
+    draggable: true,
+    posts: posts,
+    idx: idx,
+    floatingBtn: true,
+  });
 });
 </script> 
