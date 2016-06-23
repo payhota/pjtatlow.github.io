@@ -1,14 +1,19 @@
 ---
-layout: default
-title: pjtatlow | notes
+layout: notes
+title: PJ Tatlow | Notes
 permalink: /notes/
 ---
 
-<div class="home">
+<div class="main-heading">
+        <div class="text-center">
+          <h1 class="name-big">Notes</h1>
+          <h4>Just some things I've picked up along the way.</h4>
+        </div>
+</div>  
 
-  <h1 class="page-heading">Posts</h1>
+<div class="container">
 
-  <ul class="post-list">
+    <ul class="post-list">
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -20,6 +25,5 @@ permalink: /notes/
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
 </div>
+

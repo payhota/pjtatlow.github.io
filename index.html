@@ -55,19 +55,18 @@ title: PJ Tatlow
     </div>
       <img src="/img/pjtatlow.jpg" class="img-circle img-responsive center-block" height="240" width="240">
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center">
-        <blockquote>
-          <p>If you can't make it good, at least make it look good.</p>
-          <footer>Bill Gates</footer>
-        </blockquote>        
+       
         <h3>Hi! Thanks for checking out my page.</h3>
         <h4>
           
           I am currently an undergraduate student studying <a href="bioinformatics.byu.edu">Bioinformatics</a> 
           and <a href="cs.byu.edu">CS</a> at BYU. I've find myself being drawn towards the fields of machine 
           learning and data science, and I'm excited to find out what kind of new things we'll be able to do.
-          
+          I'm also interested in web development, and love having a way to reach across platforms to users. If
+          there is anything I can help you out with, just go ahead and <a class="arctic_scroll" href="#contact">contact</a> me! I'm 
+          more than willing to see what I can do.
         </h4>
-        <h4>Some tools I've used:</h4>
+        <h4>Here are some tools I've used:</h4>
         {% for skill in site.data.skills %}
           <div class="skill" style="{{skill.style}}" data-toggle="tooltip" data-placement="top" title='<div class="stars">
             {% if skill.stars == 5 %}
@@ -92,7 +91,15 @@ title: PJ Tatlow
         </div>
         {% endfor %}
           <div class="skill" >& More</div>        
-      </div>  
+        
+    <h4>And here's a quote I try to live by:</h4>
+    
+        <blockquote>
+          <p>If you can't make it good, at least make it look good.</p>
+          <footer>Bill Gates</footer>
+        </blockquote>         
+      </div>     
+    
   </div>
   
   <div class="col-md-12 col-lg-12 clearfix" id="contact" style="margin-bottom:65px;">

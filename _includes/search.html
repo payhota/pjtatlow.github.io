@@ -1,0 +1,155 @@
+<script src="{{ "/js/lunr.min.js" | prepend: site.baseurl }}"></script>
+
+<div id="search-background">
+  
+  <div id="search-cover">
+    <div id="search-box">
+      <div class="col-md-12 col-lg 12 col-sm-12 col-xs-12 input-group">
+        <span id="search-addon" class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+        <input type="text" id="search-input" class="form-control" placeholder="Search Notes" autocomplete="off">
+      </div>
+      <span id="search-input-cover"></span>
+      
+      <div id="results" class="col-md-12 col-lg 12 col-sm-12 col-xs-12">        
+        
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+<!--
+          <div class="search-result" tabindex="1">
+            <h5>Title - 04/10/16</h5>
+          </div>
+-->
+
+<script>
+
+$(document).ready(function(){
+  function initEmptyResults() {
+    $("#results").append('<div id="search-results" class="col-md-5 col-lg-5"><div><h5 class="results-title"><strong>Results:</strong></h5></div></div><div id="results-preview" class="col-md-7 col-lg-7"></div>')
+  }
+  
+  var posts = {
+    {% for post in site.posts %}
+      "{{ post.url | slugify }}": {
+        "title": "{{ post.title | xml_escape }}",
+        "category": {{ post.categories | jsonify }} ,
+        "content": {{ post.content | strip_html | strip_newlines | jsonify }},
+        "html": {{ post.excerpt | jsonify }},
+        "url": "{{ post.url | xml_escape }}",
+        "date": "{{ post.date | date_to_xmlschema }}"
+      }
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  };
+                                   
+  var idx = lunr(function () {
+    this.field('id');
+    this.field('title', { boost: 10 });
+    this.field('category', { boost: 7});
+    this.field('content');
+  });  
+  
+  for (var key in posts) {
+    posts[key].date = new Date(posts[key].date);
+    idx.add({
+      'id': key,
+      'title': posts[key].title,
+      'author': posts[key].author,
+      'category': posts[key].category,
+      'content': posts[key].content
+    });  
+  }  
+  
+  
+  
+  $("#search-box").draggable({
+    containment: "#search-background",
+    handle: "#search-input-cover"
+  }); // make search-bar draggable
+  
+  $(document).keydown(function(e) {
+    if (e.which == 32) { // spacebar
+      if (e.shiftKey) {    
+        e.preventDefault();
+        $("#search-background").fadeToggle(100, function() {
+          if ($("#search-background").css('display') !== "none") {
+            $("#search-input").focus();
+          }
+          else {
+            $("#search-input").blur();
+          }
+        })
+      }
+    }
+    else if (e.which == 40) { // down arrow
+      if ($(e.target).hasClass("search-result")) {
+        e.preventDefault();
+        var tabindex = $(e.target).attr("tabindex");
+        tabindex++;
+        $("[tabindex="+ tabindex++ + "]").focus();
+        
+      }
+    }
+    else if (e.which == 38) { // up arrow
+      if ($(e.target).hasClass("search-result")) {
+        e.preventDefault();
+        var tabindex = $(e.target).attr("tabindex");
+        tabindex--;
+        $("[tabindex="+ tabindex-- + "]").focus();
+        
+      }
+    }
+    
+    
+  }); // watch for SHIFT + SPACE and arrow up and down
+
+  $("#search-background").on("click",function(e) {
+    if (e.target == $(this)[0]) {
+      $(this).fadeToggle(100, function() {
+        $("#search-input").blur();
+      });
+    }
+  }); // close when you click outside of 
+  
+  $("#search-input-cover").on("click",function(e) { 
+    $("#search-input").focus();
+  }); // focus on input box when you click anywhere on the search bar
+  
+  $("#search-input").on("input",function(e) {
+    $("#results").empty();
+    var results = idx.search($(this).val());
+    if (results.length > 0) {
+      initEmptyResults();
+      var i = 1;
+      for (var result of results) {
+        var post = posts[result.ref]
+        $("#search-results").append('<div class="search-result" tabindex="'+i+'" search-id="'+ result.ref +'"><h5>' + post.title + "</h5><a href='"+post.url+"'><i class='fa fa-arrow-circle-right'></i></a></div>")
+        i ++;
+      }
+    }
+  });
+  
+  $("#search-input").keydown(function(e) {
+    if (e.which == 40 || e.which == 38) {
+      e.preventDefault();
+    }
+  });
+  
+  
+                                 
+  $(document).on('focus',".search-result",function(e) {
+    var post = posts[$(e.target).attr("search-id")];
+    $("#results-preview").empty();
+    $("#results-preview").append('<h5 class="text-center"><strong>Preview</strong></h5>');
+    $("#results-preview").append(post.html);
+    $("#results-preview").append('<h5 class="results-preview-meta">' + post.date.toLocaleDateString() + "</h5>");
+  })
+  
+  
+});
+</script> 
