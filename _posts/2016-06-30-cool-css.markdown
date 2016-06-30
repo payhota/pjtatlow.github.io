@@ -1,0 +1,50 @@
+---
+layout: post
+title:  "Cool CSS/JS Stuff"
+date:   2016-06-30 06:50:00 -0600
+categories: css css3 js javascript reference tools
+---
+
+Here I just want to keep track of some really cool CSS/JS tools/projects/frameworks so I can find them later. No, I don't want to talk about the giants like Bootstrap, jQuery, or Angularjs.
+These all range from super simple stylesheets to awesome jQuery and Vanilla JS plugins, or even whole HTML5 frameworks. Also, they're all free! These are not in any particular order. 
+If you know of something I should add, let me know in the comments!
+
+1. ### [Animate.css](http://daneden.github.io/animate.css/) / [WOW.js](http://mynameismatthieu.com/WOW/)
+These two libraries together allow you to do some pretty cool animations. Animate.css lets you add classes to your DOM elements to make them do one of several dozen animations when your page loads. 
+But if you don't want them to happen right away, and would rather wait until the user scrolls to that element, you can add some WOW.js to it and that's exactly what it'll do.
+
+1. ### [Masonry](http://masonry.desandro.com)
+This is the jQuery plugin I used on the notes page to make the posts that have different heights fit so well together. It basically just crams your multi-sized elements into the smallest screen space
+possible. Think like a brick wall. Very easy to use.
+
+1. ### [CSSmatic](http://www.cssmatic.com)
+This one has been a lifesaver a few times when I just wanted a simple gradient or shadow in css. It's just a website that generates the CSS code for the effect you see on the page. At the time of writing
+they can do box-shadow, border-radius, noise texture, and gradients. Super simple and very helpful.
+
+1. ### [Lunr.js](http://lunrjs.com)
+Lunr.js is essentially a javascript search engine. It powers the search features of this site, and allows you to keep searching off the server. Great documentation, although it is fairly simple to 
+use if you don't want to mess with some of the defaults.
+
+1. ### [Typed.js](http://www.mattboldt.com/demos/typed-js/)
+If you ever went to make it look like somebody is typing on your website, this is the tool for you. It's a simple jQuery plugin that you give a string or some HTML, and it "types" it out on the screen
+when the page loads. You can loop through a bunch of strings, add pauses between letters, and even backspace as much as you want if you feel like making some typos. Lots of options and great docs.
+
+1. ### [Arctic Scroll](https://github.com/PaulAdamDavis/Arctic-Scroll)
+A super simple but super useful jQuery plugin that scrolls your page down slowly when you click on a `href="#something` link, rather than teleport you straight there.
+
+1. ### [Data Tables](https://www.datatables.net)
+Ever been jealous of the super cool tables that let you search and sort and do all kinds of other things? Well here it is. A jQuery plugin, Data Tables allows you to make super useful and cool HTML tables
+that just work. You can hide columns, handle clicks on rows, get data from AJAX, you name it. They have a couple of different visual styles, but it's not too hard to create your own using their online theme
+creator if you want.
+
+1. ### [Hover.css](http://ianlunn.github.io/Hover/)
+I know magicians aren't supposed to reveal their secrets, but thankfully this one has. Hover allows you to add one of 100+ animation when you hover over an element just by adding a class to it. There's Sass,
+LESS, and CSS code available on GitHub. For a simple use case, you can just copy the CSS right out of your browser and paste it into your own stylesheet.
+
+1. ### [Materialize](http://materializecss.com)
+If you're a fan of Google's [Material Design](https://material.google.com) this is the perfect front-end framework for you. Although it's still in alpha at the time of writing, I haven't run into any troubles using it at all.
+It has lots of different components and features that won't let you down when you need them, but don't get in the way if you want add a different plugin or framework. 
+
+1. ### [PouchDB](https://pouchdb.com)
+Now this is something I haven't been able to use yet, but I want to keep an eye on it because it seems really cool! Essentially it's a javascript in-browser database that stores everything locally so you don't have to make
+a bunch of calls to the server. It syncs automatically with [CouchDB](http://couchdb.apache.org), and can be used in a whole bunch of different contexts. If you've used this let me know what you think!

@@ -7,23 +7,31 @@ permalink: /notes/
 <div class="main-heading">
         <div class="text-center">
           <h1 class="name-big">Notes</h1>
-          <h4>Just some things I've picked up along the way.<br><small>Press Shift+Space to search</small></h4>
+          <h4>Some things I've thought at one point or another.<br><small>Press Shift+Space to search</small></h4>
         </div>
 </div>  
+<script src="{{ "/js/masonry.pkgd.min.js" | prepend: site.baseurl }}"></script>
+<div class="container grid">
 
-<div class="container">
-
-    <ul class="post-list">
     {% for post in site.posts %}
-      <li>
+      <a class="list-post hvr-grow" href="{{ post.url | prepend: site.baseurl }}">
+        <h2>{{ post.title }}</h2>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+        <div class="excerpt">
+        {{ post.excerpt }}
+        
+        </div>
+      </a>
     {% endfor %}
-  </ul>
 
 </div>
 
+<script>
+
+$('.grid').masonry({
+  // options
+  itemSelector: '.list-post',
+  columnWidth: '.list-post'
+});
+
+</script>
