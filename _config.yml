@@ -9,8 +9,8 @@
 title: PJ Tatlow
 email: PJ.Tatlow@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-A place to learn more about me, PJ Tatlow. You can check out my experience,
-projects, and notes here.
+  A place to learn more about me, PJ Tatlow. You can check out my experience,
+  projects, and notes here.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://pjtatlow.me" # the base hostname & protocol for your site
 
