@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Cool CSS/JS Stuff"
-date:   2016-06-30 06:50:00 -0600
+date:   2016-06-30 06:50:00 -0700
 categories: css css3 js javascript reference tools
 ---
 

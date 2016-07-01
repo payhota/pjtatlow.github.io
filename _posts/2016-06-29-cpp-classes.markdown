@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "C++ Classes and Objects"
-date:   2016-06-29 16:10:00 -0600
+date:   2016-06-29 16:10:00 -0700
 categories: c++ cpp objects classes oop tutorial reference
 ---
 Classes are what we use to define objects in C++. An object is basically like a custom data type that can hold different types of data and have functions. This is a basic example of a class declaration.
