@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Parsing JSONs with Python"
+title:  "Parsing JSON with Python"
 date:   2016-07-01 12:50:00 -0400
 categories: json nospaces python parsing guide
 ---
