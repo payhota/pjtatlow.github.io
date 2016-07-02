@@ -15,9 +15,9 @@ import json
 
 json_str = '{"employees":[ {"firstName":"John", "lastName":"Doe"}, {"firstName":"Anna", "lastName":"Smith"}, {"firstName":"Peter", "lastName":"Jones"} ]}'
 
-json_dict = json.loads(json_str) #loads is for load string
+json_dict = json.loads(json_str) # "loads" is for load string
 
-print json_dict['employees'][0]['firstName'] # prints out John
+print json_dict['employees'][0]['firstName'] # prints out "John"
 
 {% endhighlight %}
 
