@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/pjtatlow
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://pjtatlow.me
+  * I am pjtatlow (https://keybase.io/pjtatlow) on keybase.
+  * I have a public key with fingerprint 2FF2 42EA E7C0 7DF8 3413  3E38 EAAA 9272 9166 1969
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101f0754bcc57d7cbb7e87b71c4449d05efcecd42fb492cf731d6c8a4e629df0e6d0a",
+            "fingerprint": "2ff242eae7c07df834133e38eaaa927291661969",
+            "host": "keybase.io",
+            "key_id": "eaaa927291661969",
+            "kid": "0101f0754bcc57d7cbb7e87b71c4449d05efcecd42fb492cf731d6c8a4e629df0e6d0a",
+            "uid": "5a2bde965a62194835f9fa311f64cd19",
+            "username": "pjtatlow"
+        },
+        "service": {
+            "hostname": "pjtatlow.me",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1469221078,
+    "expire_in": 157680000,
+    "prev": "bb04e972e00a952565f2c9412800138bf87aa4b08a02fdb45de4d7cde8154239",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.53
+Comment: https://keybase.io/crypto
+
+yMIhAnicrZJbSFRBGMfXS1qWJUk9RBSd8MFadGbOnNuiEkHRQw9dlIWI1jln5qyn
+1T3bOWd3W5aQIisNukFkWT4UBJKVQS89VJtZPZjajYqCIgojJAqXKAyqOVIv0WPz
+Msw3v///u/ANlRcFygrW5ZedXlYbuFcwfOt4MhA+duBpVtBtmhFCWSHGpi/WSpnr
+RWIWFUICgACaQJGwbhiSQhVD1xWmKroCDYyxRoHETIMZFCNTxxoyTEWEVDZUgpmM
+NGoCJlNAhKBgWvEocxKOFfe4LTJNhBEjTDGAQk1VxFAUmagyQoiGFKRBWYaarHFh
+i+36Cl6cTlxWY9k8xh+R6fL+wf/nupPTdhJBOmWaLBEZQQ2romRqJhEhNGVsUOjn
+TbrMiZM2xunEdo94rXZa2BUUeDRlGcwfrN/JX0QNfwWFhGN7tmG38o8Wz0uEfJ2X
+SfhgmumR3xYR3YpTPkUuSDHHtey4EIKcNDzL94RY1hCCQFGDAtuZsBwWsXxCUmQV
+8OOnYSluqesAM01BDACiSUiSJRMZGoaIY1BUdVNVCME6UAlAJtWxRBnmA6RMhRJG
+ot+ry3bEbSHEM3kkyi1dKxonXtJhwq7B3NbiQEFZoGRGob9dgbJZFX92LjxZ+qP+
+wY3E0X6I3/W/heGrkYfZ3NoFz42j5xaPNW6vliqsqsn0ZMemomO1dbdBydZ5l9zx
+9CPnzOfNCxuqxmbX77/DSjMzk46cP6BK66aunF+aXV7dGPt0eUFddyQTJfebupvy
+wJvY1xgrzj0p7wtkOyOH5059/7jn9ZWfLfUjpfnuVc3e+oerS3JGXWGqcsmDNrcH
+hKsGhq41BO5mpWb27XPvoeKLT+nyypqey30D7crXfKxlzraTH569fLHl+s8vTe2D
+80+tkEbG37TDg8/aOt5PZX4M9R/aWN/1hrCRYNerXrJy0XDdQOe80SN7L8iPV+25
+uSY2OnFiw7sbZ3cfHHv5C6l4QpQ=
+=jWR5
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/pjtatlow
+
+==================================================================
