@@ -1,5 +1,25 @@
 [
   { 
+    name : "C++",
+    style : "",
+    stars : 3.5,
+  },
+  { 
+    name : "Python",
+    style : "",
+    stars : 4,
+  },
+  { 
+    name : "Go",
+    style : "",
+    stars : 3,
+  },
+  { 
+    name : "Java",
+    style : "",
+    stars : 3,
+  },
+  { 
     name : "HTML",
     style : "",
     stars : 4.5,
@@ -14,16 +34,7 @@
     style : "",
     stars : 4.5,
   },
-  { 
-    name : "C++",
-    style : "",
-    stars : 3.5,
-  },
-  { 
-    name : "Python",
-    style : "",
-    stars : 4,
-  },
+
   { 
     name : "Minecraft",
     style : "text-decoration:line-through;",

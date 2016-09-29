@@ -12,47 +12,12 @@ title: PJ Tatlow
 
 <div class="container">
   
-  <div class="col-md-12 col-lg-12 clearfix" id="experience">
-    <div class="page-header">
-      <h2>Some cool things I've done:</h2>
-    </div>
-      {% for job in site.data.jobs %}
-        <div class="experience-item row">
-          <div class="col-md-3 col-lg-3">
-            <img class="experience-image" src="{{ job.image }}" height="180" width="180">
-          </div>
-          <div class="experience-text card col-md-9 col-lg-9">
-            <h3>{{ job.title }}</h3>
-            <h4>{{ job.org }}</h4>
-            <h5>{{ job.start }} - {{ job.end }}</h5>
-            <p class="experience-description">{{ job.description }}</p>
-          </div>
-        </div>
-      {% endfor %}
-  </div>
-  
-  <div class="col-md-12 col-lg-12 clearfix" id="projects">
-    <div class="page-header">
-      <h2>Some cool things I've made:</h2>
-    </div>
-      {% for project in site.data.projects %}
-        <div class="experience-item">
-          <div class="col-md-3 col-lg-3">
-            <img class="experience-image" src="{{ project.image }}" height="180" width="180">
-          </div>
-          <div class="experience-text card col-md-9 col-lg-9">
-            <h3>{{ project.title }}</h3>
-            <h4>{{ project.catchphrase }}</h4>
-            <p class="experience-description">{{ project.description }}</p>
-          </div>
-        </div>
-      {% endfor %}
-  </div>
-  
   <div class="col-md-12 col-lg-12 clearfix" id="about">
+<!--
     <div class="page-header">
-      <h2>About Me <small style="font-size:10px;">because you wanted to know more</small></h2>
+      <h2>About Me</h2>
     </div>
+-->
       <img src="/img/pjtatlow.jpg" class="img-circle img-responsive center-block" height="240" width="240">
       <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center">
        
@@ -64,7 +29,7 @@ title: PJ Tatlow
           learning and data science, and I'm excited to find out what kind of new things we'll be able to do.
           I'm also interested in web development, and love having a way to reach across platforms to users. If
           there is anything I can help you out with, just go ahead and <a class="arctic_scroll" href="#contact">contact</a> me! I'm 
-          more than willing to see what I can do. Also, check out my <a href="/notes/">notes</a>!
+          more than willing to see what I can do. Also, check out my <a href="/notes/">notes</a>, or the ol' <a href="https://docs.google.com/document/d/1ke9b5gtJaYiljP_YglTI7aUnyR01DYFqZfDBN9PCaKQ/edit?usp=sharing" target="_blank">resume</a>!
         </h4>
         <h4>Here are some tools I've used:</h4>
         {% for skill in site.data.skills %}
@@ -100,7 +65,47 @@ title: PJ Tatlow
         </blockquote>         
       </div>     
     
+  </div>    
+    
+    
+  <div class="col-md-12 col-lg-12 clearfix" id="projects">
+    <div class="page-header">
+      <h2>Some cool things I've made:</h2>
+    </div>
+      {% for project in site.data.projects %}
+        <div class="experience-item">
+          <div class="col-md-3 col-lg-3">
+            <img class="experience-image" src="{{ project.image }}" height="180" width="180">
+          </div>
+          <div class="experience-text card col-md-9 col-lg-9">
+            <h3>{{ project.title }}</h3>
+            <h4>{{ project.catchphrase }}</h4>
+            <p class="experience-description">{{ project.description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+  </div>    
+    
+  <div class="col-md-12 col-lg-12 clearfix" id="experience">
+    <div class="page-header">
+      <h2>Some cool things I've done: <small style="font-size:10px;">because you wanted to know more</small></h2>
+    </div>
+      {% for job in site.data.jobs %}
+        <div class="experience-item row">
+          <div class="col-md-3 col-lg-3">
+            <img class="experience-image" src="{{ job.image }}" height="180" width="180">
+          </div>
+          <div class="experience-text card col-md-9 col-lg-9">
+            <h3>{{ job.title }}</h3>
+            <h4>{{ job.org }}</h4>
+            <h5>{{ job.start }} - {{ job.end }}</h5>
+            <p class="experience-description">{{ job.description }}</p>
+          </div>
+        </div>
+      {% endfor %}
   </div>
+  
+
   
   <div class="col-md-12 col-lg-12 clearfix" id="contact" style="margin-bottom:65px;">
     <div class="page-header">
@@ -124,7 +129,7 @@ title: PJ Tatlow
 
 $(function(){
   $(".typed").typed({
-    strings: ["Science", "Gadgets", "Coding Tips", "Machine Learning", "Android", "Bioinformatics", "Life Hacks", 
+    strings: ["Web Development", "Science", "Gadgets", "Open Source Projects", "Machine Learning", "Android", "Bioinformatics", "Life Hacks", 
               "Gaming", "Artificial Intelligence", "iOS", "Custom PCs"],
     typeSpeed: 30,
     showCursor: true,

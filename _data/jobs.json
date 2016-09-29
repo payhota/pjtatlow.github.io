@@ -1,42 +1,41 @@
 [
   {
-    org: "Simmons Center for Cancer Research",
-    start: "April 2016",
-    end: "Current",
-    title: "Research Fellow",
-    description: "Working on an independant research project focused on applying machine learning to the field of pharmacogenomics, taking advantage of several large databases like CCLE, TCGA, and CMAP. \
-                  Our goal is to be able to make predictions about a tumor's response to a variety of drugs based on it's gene expression 'signature' and the drug's known cell response signature.",
-    image: "/img/scrr-logo.jpg"
-  },
-  {
     org: "Piccolo Lab",
     start: "December 2015",
     end: "Current",
     title: "Research Assistant",
-    description: "Working in coordination the Institute for Systems Biology, and as part of the NCI Cancer Genomics Cloud Pilots, I used Google's Cloud Services to reprocess several terabytes of genomic data \
-                  hosted in Google Storage in only a matter of hours. We are currently working towards reprocessing all of TCGA using the read-quantification program Kallisto.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/BYU_Medallion_Logo.svg/2000px-BYU_Medallion_Logo.svg.png"
-  },
-  {
-    org: "Grose Lab",
-    start: "August 2015",
-    end: "Current",
-    title: "Research Assistant & Software Developer",
-    description: "Isolated, purified, and annotated novel bacteriophages targeting Erwinia amylovora. E. amylovora causes <a href='http://www.ipm.ucdavis.edu/PMG/PESTNOTES/pn7414.html' target='_blank'>fireblight</a> \
-                  in many fruiting trees (pears, apples, etc.) and causes millions of dollars in damages to orchards. We are working towards a bacteriophage therapy for this disease, testing our phages \
-                  in FDA trials in 2015 and 2016. Currently working on Geneysis, a novel tool for aligning gene starts in bacteriophages, to speed up the annotation process." ,
+    description: "Currently working on a web app to allow scientists to download parts of large genomic datasets, with the ability to select certain samples based on any number of variables, and filter down to only the genes they care about. Working in coordination the Institute for Systems Biology, and as part of the NCI Cancer Genomics Cloud Pilots, I used Google's Cloud Services to reprocess several terabytes of genomic data hosted in Google Storage in only a matter of hours. We are currently working towards reprocessing all of TCGA using the read-quantification program Kallisto.",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/BYU_Medallion_Logo.svg/2000px-BYU_Medallion_Logo.svg.png"
   },
   {
     org: "Center for Teaching and Learning",
     start: "April 2015",
     end: "Current",
-    title: "Computer Support Rep & Regression Tester",
+    title: "Web Developer && Sys Admin",
     description: "Part of the IT team supporting the CTL and Testing Services at BYU, providing support for Windows, Mac, and Linux computers. Created an asset management system (read web app) to track hardware locations, \
                   along with a website to showcase the talents of the employees. Worked closely with management and a small team to create a suite of web apps to automate tasks from help tickets to HR onboarding. \
                   Breifly part of the regression test team for an in-house LMS called 'Learning Suite' in the summer of 2015." ,
     image: "/img/CTL_Logo.png"
+  },  
+  {
+    org: "Simmons Center for Cancer Research",
+    start: "April 2016",
+    end: "August 2016",
+    title: "Research Fellow",
+    description: "Developed a tool to predict tumor response to a variety of drugs leveraging large databases full of gene expression data. Constructed gene expression profiles from cancer cell lines exposed to one of thousands of perturbations, and algorithmically scored human tumors based on their similarity to a given gene expression profile.",
+    image: "/img/scrr-logo.jpg"
   },
+  {
+    org: "Grose Lab",
+    start: "August 2015",
+    end: "Current",
+    title: "Research Assistant && Software Developer",
+    description: "Isolated, purified, and annotated novel bacteriophages targeting Erwinia amylovora. E. amylovora causes <a href='http://www.ipm.ucdavis.edu/PMG/PESTNOTES/pn7414.html' target='_blank'>fireblight</a> \
+                  in many fruiting trees (pears, apples, etc.) and causes millions of dollars in damages to orchards. We are working towards a bacteriophage therapy for this disease, testing our phages \
+                  in FDA trials in 2015 and 2016. Currently working on Geneysis, a novel tool for aligning gene starts in bacteriophages, to speed up the annotation process." ,
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/BYU_Medallion_Logo.svg/2000px-BYU_Medallion_Logo.svg.png"
+  },
+
   {
     org: "Geek Squad",
     start: "August 2014",
@@ -44,7 +43,7 @@
     title: "Advanced Repair Agent",
     description: "Supported a variety of clients with their computer repairs and other needs. Diagnosed and repaired all amalgamations of issues, ranging from removing malware and adware to replacing old components. \
                   Also installed new components for clients, as well as occasionally building entire systems from scratch. Educated clients about various technologies, led small group training sessions about general \
-                  operating system tasks or other more specific software. Currently sleeper awaiting the signal.",
+                  operating system tasks or other more specific software. Currently sleeper, awaiting the signal.",
     image: "https://pbs.twimg.com/profile_images/719527843076509696/5zr6aC4U.jpg"
   },
 

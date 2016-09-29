@@ -20,3 +20,5 @@ permalink: /notes/:year/:month/:title
 markdown: kramdown
 gems:
   - jekyll-sitemap
+  - jekyll-admin
+  - bundler
