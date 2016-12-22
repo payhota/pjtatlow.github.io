@@ -16,7 +16,9 @@ Python 2.6 should be installed by default. That should be fine. If you'd rather 
 using your terminal, then type in `brew install python`. That should install the latest version of Python 2 for you. Then type `python --version`
 into the terminal and it should tell you that you're using Python 2.7! With that, you're ready to go. I'd recommend using a text editor like
 [Atom](https://atom.io) or [Visual Studio Code](https://code.visualstudio.com) to write your code. These have nice features that make it easier
-for you to catch mistakes!
+for you to catch mistakes! When you create a new Python file, make sure to add the `.py` extention to the end. This will make sure the editor
+recognizes that you're writing in Python. When you're ready to run your code, navigate to your Python file using the terminal and run
+`python my_file.py`. This will run your program!
 
 ## The Lab
 
@@ -62,7 +64,7 @@ most common ones.
       what the \r character does. If you print after a \r it will basically just overwrite the text that's already on that line.</td>
     </tr>
     <tr>
-      <td class="center-cell"><code>\" or \'</code></td>
+      <td class="center-cell"><code>\"</code> or <code>\'</code></td>
       <td>If you want to put quotes in your string that becomes problematic. If you try it, you'll end up ending your string rather than
       including a quote! Put a backslash in front of a single or double quote and it will show up perfectly in your string.</td>
     </tr>
