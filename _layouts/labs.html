@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header-notes.html %}
+
+    <div style="min-height:100vh;">
+      
+      <div class="main-heading">
+              <div class="text-center">
+                <h1 class="name-big">{{ page.title }}</h1>
+                <h4>{{ page.description }}</h4>
+              </div>
+      </div>
+
+      <div class="container">
+        {{ content }}
+      </div>      
+      
+      
+    </div>
+
+    {% include footer.html %}
+
+  </body> 
+  
+</html>

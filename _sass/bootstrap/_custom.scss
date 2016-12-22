@@ -317,3 +317,30 @@ td.code {
     border: none;    
   }
 }
+ol.lab-list {
+  list-style-type: none;
+  li {
+    a {
+      font-size: 35px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    p {
+      font-size: 16px;
+      margin-left: 15px;
+    }
+  }
+}
+.reference-table {
+  width: auto;
+  margin: 0 auto;
+  th {
+    padding: 15px;
+  }
+}
+.center-cell {
+  text-align: center;
+}
+.full-width-img {
+  width: 100%;
+}
