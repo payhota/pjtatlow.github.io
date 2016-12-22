@@ -18,7 +18,8 @@ into the terminal and it should tell you that you're using Python 2.7! With that
 [Atom](https://atom.io) or [Visual Studio Code](https://code.visualstudio.com) to write your code. These have nice features that make it easier
 for you to catch mistakes! When you create a new Python file, make sure to add the `.py` extention to the end. This will make sure the editor
 recognizes that you're writing in Python. When you're ready to run your code, navigate to your Python file using the terminal and run
-`python my_file.py`. This will run your program!
+`python my_file.py`. This will run your program! If you need help with this see 
+[this great blog post](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line) about using the MacOS terminal.
 
 ## The Lab
 

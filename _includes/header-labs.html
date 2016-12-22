@@ -1,0 +1,36 @@
+<nav id="main_nav" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="sidebar-toggle hide-on-md"  aria-expanded="false">
+        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+      </button>
+      <a class="navbar-brand" href="/">PJ Tatlow</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="main-nav">
+      <ul class="nav navbar-nav">
+        <li><a href="/python_labs">Python Labs</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<!-- Overlay for fixed sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<nav id="sidebar" class="sidebar sidebar-fixed-left" role="navigation">
+    <h3 style="margin-left: 16px;">PJ Tatlow</h3>
+    <!-- Sidebar navigation -->
+    <ul class="nav sidebar-nav">
+      <li><a class="arctic_scroll sidenav-link" data-offset="-50" href="#experience">Experience</a></li>
+      <li><a class="arctic_scroll sidenav-link" data-offset="-50" href="#projects">Projects</a></li>
+      <li><a class="arctic_scroll sidenav-link" data-offset="-50" href="#about">About</a></li>
+      <li><a class="arctic_scroll sidenav-link" data-offset="-50" href="#contact">Contact</a></li>
+      <li class="sidenav-notes"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">Subscribe</a></li>
+  </ul>
+</nav>
+
