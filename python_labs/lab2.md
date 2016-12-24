@@ -81,9 +81,9 @@ This is how we do math.
     </tr>
     <tr>
       <td class="center-cell"><code>*</code></td>
-      <td>Multiplication. Multiplies the two numbers together.</td>
-      <td><code>2 * 3</code></td>
-      <td><code>6</code></td>
+      <td>Multiplication. Multiplies the two numbers together. Also, "multiplies" a string.</td>
+      <td><code>2 * 3</code><br><code>"W"*3</code></td>
+      <td><code>6</code><br><code>"WWW"</code></td>
     </tr>
     <tr>
       <td class="center-cell"><code>/</code></td>
