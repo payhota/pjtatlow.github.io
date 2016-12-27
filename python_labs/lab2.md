@@ -1,15 +1,15 @@
 ---
 layout: labs
 title: Lab 2
-description: Variables, Operators, and Conditionals
+description: "Geometry Calculator: Variables, Operators, and Conditionals"
 ---
 
 
 ## Variables
 
-One of the most fundamental ideas in programming is the ability to store strings and numbers in variables. This allows you manipulate
+One of the most fundamental ideas in programming is the ability to store values in variables. This allows you manipulate
 numbers, combine strings, and keep track of all your values. As you'll quickly realize, variables are essential in any program. In Python,
-we have three basic types of variables: strings, integers, floats, and booleans. Strings are basically just a bunch of characters between 
+we have four basic types of variables: strings, integers, floats, and booleans. Strings are basically just a bunch of characters between 
 double or single quotes. Integers are numbers that don't have decimal points, and floats are decimal numbers. Python can handle decimals up
 to 13 places. Both integers and floats can be positive or negative. Boolean values are just a fancy way of saying true or false. In Python we 
 use the keywords `True` and `False`, making sure the first letter is capitalized. You'll see why we need these when we talk about conditional
@@ -19,7 +19,8 @@ Variables can be named pretty much whatever you want. The only rules are that va
 they can only contain letters, numbers, and underscores, and they are case sensitive (`NAME` is not the same as `name` or `Name`). It is very
 important to make sure your variable names make sense, so when you read your code later you know what is supposed to be stored in that variable.
 Variables are given values by putting the variable name on the left, an `=` sign in the middle, and it's value on the right, like this: 
-`variable = "value"`. The value can be any of the data types mentioned above, or another variable. Lets see some examples.
+`variable = "value"`. The value can be any of the data types mentioned above, another variable, or an expression that gives you a value. 
+Lets see some examples.
 
 {% highlight python linenos %}
 # Here we create a variable called my_name and assign it a string value
@@ -41,7 +42,10 @@ pi = 3.14
 radius = 5
 
 # remember the circumference of a circle is (2 * pi * r)
+# the expression (2 * pi * radius) is equivalent to a float, 
+# which is then assigned to the variable "circumference"
 circumference = 2 * pi * radius # value 31.4
+
 {% endhighlight %}
 
 **NOTE** You can put comments in your code by putting a `#` in front of the words you don't want to actually be run as code.
@@ -88,7 +92,7 @@ This is how we do math.
     <tr>
       <td class="center-cell"><code>/</code></td>
       <td>Division. Divides the number on the left by the number on the right. If you are dividing two integers it will give you back an integer,
-      so if your number doesn't fit entirely you won't see the remainder unless one of them is a float.</td>
+      so if your number doesn't fit entirely you won't see the decimal unless one of them is a float.</td>
       <td><code>6 / 2</code><br><code>3 / 2</code><br><code>3 / 2.0</code></td>
       <td><code>3</code><br><code>1</code><br><code>1.5</code></td>
     </tr>
