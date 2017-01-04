@@ -15,7 +15,7 @@ university would look like. I'm hoping to be able to give you some projects to w
 figure things out for yourself. I'm going to put very little actual code. I'll put screenshots of what your final product
 should look like, and you'll just try and emulate the same functionality. I'll probably put some stuff here for you to reference 
 as you work, but not much. Use the internet! If you have a question I promise somebody else has already asked it and had it answered
-for them, probably on [stackoverflow](http://stackoverflow.com).
+probably on [stackoverflow](http://stackoverflow.com).
 
 ### Installing Python
 
@@ -66,47 +66,7 @@ string"""
 
 Try running this to see what happens!
 
-Escape characters are special characters that do different things like add tabs or start a new line. The table below explains a few of the 
-most common ones.
-
-<table class="table table-hover reference-table">
-  <thead>
-    <th width="14%">Escape Character</th>
-    <th width="86%">Description</th>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="center-cell"><code>\t</code></td>
-      <td>Puts one tab into your output. Approximately equal to four characters, but helpful when trying to align text to the same point.
-      Essentially it rounds you up to the closest fourth character. If this is confusing, try it out and see what it does!</td>
-    </tr>
-    <tr>
-      <td class="center-cell"><code>\n</code></td>
-      <td>This is the new line or line feed character. It will make any text after it start on the next line.</td>
-    </tr>
-    <tr>
-      <td class="center-cell"><code>\r</code></td>
-      <td>This is the carriage return character. Try to image a typewriter starting a new line. The two steps are to pull the paper up 
-      so you're the line beneath (\n), and the second step is to push the "carriage" all the way back to the left. The second action is
-      what the \r character does. If you print after a \r it will basically just overwrite the text that's already on that line.</td>
-    </tr>
-    <tr>
-      <td class="center-cell"><code>\"</code> or <code>\'</code></td>
-      <td>If you want to put quotes in your string that becomes problematic. If you try it, you'll end up ending your string rather than
-      including a quote! Put a backslash in front of a single or double quote and it will show up perfectly in your string.</td>
-    </tr>
-  </tbody>
-</table>
-
-To use escape characters in your strings, just type them exactly as I'm showing them to you in the table inside of the quotes that surround
-your string. For example, `print Line One\nLine Two` will print out like this:
-
-{% highlight cpp linenos %}
-Line One
-Line Two
-{% endhighlight %}
-
-See how each part is on it's own line? You can do a lot of formatting like this using escape characters!
+See my blog post about [escape characters](/notes/2016/12/escape-characters) too. You WILL need these to do this lab.
 
 Alright! Now that we have that out of the way, take a look at the image below and make the output of your program look exactly the same.
 You will have to use `print` and escape characters to make this work. **NOTE**. The print keyword automatically adds a new line character
