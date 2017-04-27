@@ -1,7 +1,15 @@
 [
   {
+    org: "Qualtrics",
+    start: "January 2017",
+    end: "Current",
+    title: "Software Engineer",
+    description: "Full-stack developer working on world-class experience management software. Developing front-end applications with AngularJS, and server side software with PHP, Java, NodeJS, and Go. Working on a team utilizing SCRUM/Agile methodologies, with Git for version control.",
+    image: "https://upload.wikimedia.org/wikipedia/en/a/a0/Qualtrics_Logo.png"
+  },
+  {
     org: "Piccolo Lab",
-    start: "December 2015",
+    start: "January 2016",
     end: "Current",
     title: "Research Assistant",
     description: "Currently working on a web app to allow scientists to download parts of large genomic datasets, with the ability to select certain samples based on any number of variables, and filter down to only the genes they care about. Working in coordination the Institute for Systems Biology, and as part of the NCI Cancer Genomics Cloud Pilots, I used Google's Cloud Services to reprocess several terabytes of genomic data hosted in Google Storage in only a matter of hours. We are currently working towards reprocessing all of TCGA using the read-quantification program Kallisto.",
@@ -10,7 +18,7 @@
   {
     org: "Center for Teaching and Learning",
     start: "April 2015",
-    end: "Current",
+    end: "April 2017",
     title: "Web Developer && Sys Admin",
     description: "Part of the IT team supporting the CTL and Testing Services at BYU, providing support for Windows, Mac, and Linux computers. Created an asset management system (read web app) to track hardware locations, \
                   along with a website to showcase the talents of the employees. Worked closely with management and a small team to create a suite of web apps to automate tasks from help tickets to HR onboarding. \

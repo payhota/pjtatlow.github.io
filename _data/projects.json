@@ -17,7 +17,7 @@
     image: "/img/brio.png"
   },
   {
-    title: "CTL Asset Tracking",
+    title: "myCTL",
     catchphrase: "Throw Out The Spreadsheets",
     description: "Originally helped move our department away from tracking hardware and software purchases via spreadsheets, and into a web app. Later independantly rewrote the app for a  \
                   a wider variety of use cases, including allowing all employees to track the hardware they use.",
