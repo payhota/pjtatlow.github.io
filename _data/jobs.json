@@ -13,7 +13,7 @@
     end: "Current",
     title: "Research Assistant",
     description: "Currently working on a web app to allow scientists to download parts of large genomic datasets, with the ability to select certain samples based on any number of variables, and filter down to only the genes they care about. Working in coordination the Institute for Systems Biology, and as part of the NCI Cancer Genomics Cloud Pilots, I used Google's Cloud Services to reprocess several terabytes of genomic data hosted in Google Storage in only a matter of hours. We are currently working towards reprocessing all of TCGA using the read-quantification program Kallisto.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/BYU_Medallion_Logo.svg/2000px-BYU_Medallion_Logo.svg.png"
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Brigham_Young_University_medallion.svg"
   },
   {
     org: "Center for Teaching and Learning",
@@ -41,7 +41,7 @@
     description: "Isolated, purified, and annotated novel bacteriophages targeting Erwinia amylovora. E. amylovora causes <a href='http://www.ipm.ucdavis.edu/PMG/PESTNOTES/pn7414.html' target='_blank'>fireblight</a> \
                   in many fruiting trees (pears, apples, etc.) and causes millions of dollars in damages to orchards. We are working towards a bacteriophage therapy for this disease, testing our phages \
                   in FDA trials in 2015 and 2016. Currently working on Geneysis, a novel tool for aligning gene starts in bacteriophages, to speed up the annotation process." ,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/BYU_Medallion_Logo.svg/2000px-BYU_Medallion_Logo.svg.png"
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Brigham_Young_University_medallion.svg"
   },
 
   {

@@ -12,7 +12,7 @@
   { 
     name : "Go",
     style : "",
-    stars : 3,
+    stars : 3.5,
   },
   { 
     name : "Java",
@@ -27,7 +27,7 @@
   { 
     name : "Javascript",
     style : "",
-    stars : 4,
+    stars : 4.5,
   },
   { 
     name : "CSS",
@@ -53,12 +53,12 @@
   { 
     name : "PHP",
     style : "",
-    stars : 3.5,
+    stars : 4,
   },
   { 
     name : "Bash",
     style : "",
-    stars : 3,
+    stars : 4,
   },
   { 
     name : "jQuery",
@@ -68,7 +68,7 @@
   { 
     name : "Angular",
     style : "",
-    stars : 3.5,
+    stars : 4,
   },
   { 
     name : "R",
@@ -93,12 +93,17 @@
   { 
     name : "Google Cloud",
     style : "",
-    stars : 2.5,
+    stars : 3,
   },
   { 
     name : "Docker",
     style : "",
     stars : 4,
+  },  
+  { 
+    name : "Tensorflow",
+    style : "",
+    stars : 3,
   },  
 
 ]
